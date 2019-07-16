@@ -14,13 +14,16 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainViewModel extends BaseViewModel {
+    public MainViewModel() {
+    }
+
     public MainViewModel(LoadingEvent event) {
         setLoading(event);
     }
 
     public MutableLiveData<WordResponse> tuVung = new MutableLiveData<>();
 
-    public void getTuVung(String en, String vn, MessageCallback callback) {
+    public void getWord(String en, String vn, MessageCallback callback) {
         if (!Word.validate(en, vn)) {
             callback.message("");
             return;

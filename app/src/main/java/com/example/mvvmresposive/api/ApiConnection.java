@@ -13,22 +13,30 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiConnection {
     private static Retrofit retrofit = null;
-
     private static ApiRepository api;
 
-    private static Retrofit getInstace(String base_url){
+    public static void init(){
+        api =  ApiConnection.getInstances("https://server2301.herokuapp.com/").create(ApiRepository.class);
+    }
+
+    public static ApiRepository getApi() {
+        return api;
+    }
+
+    private static Retrofit getInstances(String base_url){
         if (retrofit == null){
             Gson gson = new GsonBuilder().disableHtmlEscaping().create();
             retrofit = new Retrofit.Builder()
                         .baseUrl(base_url)
-                        .client(makeHttpClient())
+                        .client(getOkHttpClient())
                         .addConverterFactory(GsonConverterFactory.create(gson))
                         .build();
             return retrofit;
         }
         return retrofit;
     }
-    private static OkHttpClient makeHttpClient(){
+
+    private static OkHttpClient getOkHttpClient(){
         OkHttpClient.Builder okHttpClient = new OkHttpClient.Builder()
                                 .connectTimeout(30, TimeUnit.SECONDS)
                                 .writeTimeout(30,TimeUnit.SECONDS)
@@ -41,16 +49,4 @@ public class ApiConnection {
         }
         return okHttpClient.build();
     }
-
-    public static ApiRepository getApi() {
-        return api;
-    }
-
-    public static ApiRepository init(){
-        api =  ApiConnection.getInstace("https://server2301.herokuapp.com/").create(ApiRepository.class);
-        return api;
-    }
-
-
-
 }

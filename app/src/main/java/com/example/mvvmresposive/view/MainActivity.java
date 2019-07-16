@@ -47,7 +47,7 @@ public class MainActivity extends BaseActivity<MainViewModel> {
         });
 
         btnAdd.setOnClickListener(view ->
-                mViewModel.getTuVung(edtEn.getText().toString(),
+                mViewModel.getWord(edtEn.getText().toString(),
                         edtVn.getText().toString(),
                         mess -> Toast.makeText(MainActivity.this, mess, Toast.LENGTH_LONG).show()));
     }
