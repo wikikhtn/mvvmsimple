@@ -1,4 +1,4 @@
-package com.example.mvvmresposive.base;
+package com.example.mvvmsimple.base;
 
 import android.os.Bundle;
 

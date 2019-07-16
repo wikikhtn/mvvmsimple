@@ -1,8 +1,8 @@
-package com.example.mvvmresposive.config;
+package com.example.mvvmsimple.config;
 
 import android.app.Application;
 
-import com.example.mvvmresposive.api.ApiConnection;
+import com.example.mvvmsimple.api.ApiConnection;
 
 public class ExApp extends Application {
     @Override

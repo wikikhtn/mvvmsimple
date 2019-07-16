@@ -1,4 +1,4 @@
-package com.example.mvvmresposive;
+package com.example.mvvmsimple;
 
 import org.junit.Test;
 

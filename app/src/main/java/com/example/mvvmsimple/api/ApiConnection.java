@@ -1,6 +1,6 @@
-package com.example.mvvmresposive.api;
+package com.example.mvvmsimple.api;
 
-import com.example.mvvmresposive.BuildConfig;
+import com.example.mvvmsimple.BuildConfig;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

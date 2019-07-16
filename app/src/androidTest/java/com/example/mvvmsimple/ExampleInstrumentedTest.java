@@ -1,4 +1,4 @@
-package com.example.mvvmresposive;
+package com.example.mvvmsimple;
 
 import android.content.Context;
 

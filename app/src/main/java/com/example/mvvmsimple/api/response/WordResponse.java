@@ -1,8 +1,8 @@
-package com.example.mvvmresposive.api.response;
+package com.example.mvvmsimple.api.response;
 
 import java.util.List;
 
-import com.example.mvvmresposive.model.Word;
+import com.example.mvvmsimple.model.Word;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

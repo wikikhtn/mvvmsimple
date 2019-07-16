@@ -1,6 +1,6 @@
-package com.example.mvvmresposive.api;
+package com.example.mvvmsimple.api;
 
-import com.example.mvvmresposive.api.response.WordResponse;
+import com.example.mvvmsimple.api.response.WordResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

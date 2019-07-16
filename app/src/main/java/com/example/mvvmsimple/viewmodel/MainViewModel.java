@@ -1,13 +1,13 @@
-package com.example.mvvmresposive.viewmodel;
+package com.example.mvvmsimple.viewmodel;
 
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.mvvmresposive.api.ApiConnection;
-import com.example.mvvmresposive.base.BaseViewModel;
-import com.example.mvvmresposive.event.LoadingEvent;
-import com.example.mvvmresposive.api.response.WordResponse;
-import com.example.mvvmresposive.event.MessageCallback;
-import com.example.mvvmresposive.model.Word;
+import com.example.mvvmsimple.api.ApiConnection;
+import com.example.mvvmsimple.base.BaseViewModel;
+import com.example.mvvmsimple.event.LoadingEvent;
+import com.example.mvvmsimple.api.response.WordResponse;
+import com.example.mvvmsimple.event.MessageCallback;
+import com.example.mvvmsimple.model.Word;
 
 import retrofit2.Call;
 import retrofit2.Callback;

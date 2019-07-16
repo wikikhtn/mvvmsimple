@@ -1,4 +1,4 @@
-package com.example.mvvmresposive.view;
+package com.example.mvvmsimple.view;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -6,10 +6,10 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.example.mvvmresposive.R;
-import com.example.mvvmresposive.base.BaseActivity;
-import com.example.mvvmresposive.event.LoadingEvent;
-import com.example.mvvmresposive.viewmodel.MainViewModel;
+import com.example.mvvmsimple.R;
+import com.example.mvvmsimple.base.BaseActivity;
+import com.example.mvvmsimple.event.LoadingEvent;
+import com.example.mvvmsimple.viewmodel.MainViewModel;
 
 public class MainActivity extends BaseActivity<MainViewModel> {
     ProgressBar progressBar;

@@ -1,11 +1,11 @@
-package com.example.mvvmresposive.base;
+package com.example.mvvmsimple.base;
 
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 import androidx.lifecycle.ViewModel;
 
-import com.example.mvvmresposive.event.LoadingEvent;
+import com.example.mvvmsimple.event.LoadingEvent;
 
 public class BaseViewModel extends ViewModel implements LifecycleObserver {
     private LoadingEvent mLoading;
